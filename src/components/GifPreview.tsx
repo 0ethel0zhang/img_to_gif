@@ -15,7 +15,7 @@ export function GifPreview({ gifUrl, onClear }: GifPreviewProps) {
     if (!gifUrl) return;
     const a = document.createElement("a");
     a.href = gifUrl;
-    a.download = `gifforge-${Date.now()}.gif`;
+    a.download = `giffactory-${Date.now()}.gif`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -31,7 +31,7 @@ export function GifPreview({ gifUrl, onClear }: GifPreviewProps) {
           </Button>
         </div>
       </div>
-      
+
       <div className="flex justify-center bg-[url('https://www.transparenttextures.com/patterns/subtle-grey.png')] bg-gray-50 rounded-lg overflow-hidden border border-gray-200">
         <img src={gifUrl} alt="Generated GIF" className="max-w-full max-h-[500px] object-contain" />
       </div>

@@ -53,7 +53,7 @@ export default function App() {
         setWorkerBlobUrl(url);
       })
       .catch((err) => console.error("Failed to load GIF worker:", err));
-      
+
     return () => {
       if (workerBlobUrl) URL.revokeObjectURL(workerBlobUrl);
     };
@@ -127,7 +127,7 @@ export default function App() {
           // Clear canvas
           ctx.fillStyle = "#ffffff"; // White background for transparency handling if needed
           ctx.fillRect(0, 0, settings.width, settings.height);
-          
+
           // Draw image centered/contain
           // Calculate aspect ratio to fit
           const scale = Math.min(
@@ -138,9 +138,9 @@ export default function App() {
           const h = img.height * scale;
           const x = (settings.width - w) / 2;
           const y = (settings.height - h) / 2;
-          
+
           ctx.drawImage(img, x, y, w, h);
-          
+
           gif.addFrame(ctx, { copy: true, delay: settings.delay });
           resolve();
         };
@@ -167,7 +167,7 @@ export default function App() {
           G
         </div>
         <div>
-          <h1 className="text-2xl font-bold tracking-tight">GifForge</h1>
+          <h1 className="text-2xl font-bold tracking-tight">GifFactory</h1>
           <p className="text-sm text-gray-500">Create animated GIFs from images instantly</p>
         </div>
       </header>
@@ -175,10 +175,10 @@ export default function App() {
       <main className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2 space-y-6">
           <ImageUploader onUpload={handleUpload} />
-          <ImageGrid 
-            images={images} 
-            onRemove={handleRemove} 
-            onReorder={setImages} 
+          <ImageGrid
+            images={images}
+            onRemove={handleRemove}
+            onReorder={setImages}
           />
         </div>
 
@@ -191,7 +191,7 @@ export default function App() {
             progress={progress}
             hasImages={images.length > 0}
           />
-          
+
           {generatedGif && (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
