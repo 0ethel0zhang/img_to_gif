@@ -34,9 +34,9 @@ export function Controls({
   };
 
   return (
-    <Card className="p-6 space-y-6 h-fit sticky top-6">
+    <Card className="p-6 space-y-6 h-fit top-6">
       <div className="flex items-center gap-2 pb-4 border-b border-gray-100">
-        <Settings className="w-5 h-5 text-brand-orange" />
+        <Settings className="w-5 h-5 text-brand-indigo" />
         <h2 className="font-semibold text-lg">Settings</h2>
       </div>
 
@@ -72,7 +72,7 @@ export function Controls({
             step="10"
             value={settings.delay}
             onChange={(e) => handleChange("delay", parseInt(e.target.value))}
-            className="w-full accent-brand-orange h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
+            className="w-full accent-brand-indigo h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
           />
         </div>
 
@@ -88,7 +88,7 @@ export function Controls({
             step="1"
             value={settings.quality}
             onChange={(e) => handleChange("quality", parseInt(e.target.value))}
-            className="w-full accent-brand-orange h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
+            className="w-full accent-brand-indigo h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
           />
           <p className="text-xs text-gray-500">Lower is better quality, but slower.</p>
         </div>
@@ -99,7 +99,7 @@ export function Controls({
             id="loop"
             checked={settings.repeat === 0}
             onChange={(e) => handleChange("repeat", e.target.checked ? 0 : -1)}
-            className="w-4 h-4 text-brand-orange border-gray-300 rounded focus:ring-brand-orange"
+            className="w-4 h-4 text-brand-indigo border-gray-300 rounded focus:ring-brand-indigo"
           />
           <label htmlFor="loop" className="text-sm font-medium text-gray-700">
             Loop Forever

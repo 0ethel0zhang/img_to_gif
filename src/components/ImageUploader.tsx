@@ -46,8 +46,8 @@ export function ImageUploader({ onUpload }: ImageUploaderProps) {
       className={cn(
         "relative flex flex-col items-center justify-center w-full h-64 border-2 border-dashed rounded-xl cursor-pointer transition-colors",
         isDragging
-          ? "border-brand-orange bg-brand-orange/5"
-          : "border-gray-300 hover:border-brand-orange hover:bg-gray-50"
+          ? "border-brand-indigo bg-brand-indigo/5"
+          : "border-gray-300 hover:border-brand-indigo hover:bg-gray-50"
       )}
     >
       <input
@@ -60,7 +60,7 @@ export function ImageUploader({ onUpload }: ImageUploaderProps) {
       />
       <div className="flex flex-col items-center justify-center pt-5 pb-6 text-center px-4">
         <div className="p-4 bg-white rounded-full shadow-sm mb-4">
-          <Upload className="w-8 h-8 text-brand-orange" />
+          <Upload className="w-8 h-8 text-brand-indigo" />
         </div>
         <p className="mb-2 text-lg font-medium text-brand-black">
           <span className="font-semibold">Click to upload</span> or drag and drop

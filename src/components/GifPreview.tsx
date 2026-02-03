@@ -22,9 +22,9 @@ export function GifPreview({ gifUrl, onClear }: GifPreviewProps) {
   };
 
   return (
-    <Card className="p-6 space-y-4 bg-white border-brand-orange/20 shadow-lg ring-4 ring-brand-orange/5">
+    <Card className="p-6 space-y-4 bg-white border-brand-indigo/20 shadow-lg ring-4 ring-brand-indigo/5">
       <div className="flex items-center justify-between pb-2 border-b border-gray-100">
-        <h2 className="font-semibold text-lg text-brand-orange">Result</h2>
+        <h2 className="font-semibold text-lg text-brand-indigo">Result</h2>
         <div className="flex gap-2">
           <Button variant="ghost" size="sm" onClick={onClear} className="text-red-500 hover:text-red-600 hover:bg-red-50">
             <Trash2 className="w-4 h-4" />
