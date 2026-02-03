@@ -164,7 +164,7 @@ export default function App() {
     <div className="min-h-screen p-4 md:p-8 max-w-7xl mx-auto space-y-8">
       <header className="flex items-center gap-3 pb-6 border-b border-gray-200">
         <div className="w-10 h-10 bg-brand-indigo rounded-lg flex items-center justify-center text-white font-bold text-xl">
-          <img src="GifFactory_logo.ico" alt="GifFactory" className="w-full h-full scale-150" />
+          <img src="Giffactory_logo.ico" alt="GifFactory" className="w-full h-full scale-150" />
         </div>
         <div>
           <h1 className="text-2xl font-bold tracking-tight">GifFactory</h1>
